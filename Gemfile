@@ -76,3 +76,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "pundit"
+gem 'webpacker'
+gem 'react_on_rails'

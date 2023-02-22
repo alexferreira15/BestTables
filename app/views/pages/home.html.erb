@@ -1,2 +1,10 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>All Restaurants</h1>
+
+<% @restaurants.each do |restaurant| %>
+  <%= link_to restaurant_path(restaurant),class: "" do %>
+    <%= restaurant.name %>
+    <%= restaurant.location %>
+    <%= restaurant.opening_hours %>
+    <%= restaurant.closing_hours %>
+  <% end %>
+<% end %>
