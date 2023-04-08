@@ -1,4 +1,5 @@
 class RestaurantsController < ApplicationController
-
-  # criar index para continuar a seguir ao start button
+  def show
+    @restaurant = Restaurant.find_by_id(1)
+  end
 end
